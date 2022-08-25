@@ -1,0 +1,18 @@
+{% extends 'views/layouts/base.html' %}
+
+{% block content %}
+    <div class="flex lg:flex-row flex-wrap relative">
+        {% for category in entries().fetch('doc', {'collection': true}).sortByAsc('title').onlyFromCollection(['title', 'id']) %}
+            <div class="w-full lg:w-4/12">  
+                <a href="{{ url(category.id) }}" class="text-2xl font-semibold flex items-center pt-4 pb-2 hover:text-pink-500">
+                    <div>{{ category.title }}</div>
+                </a>
+                {% for item in entries().fetch(category.id, {'collection': true}).sortByAsc('title').onlyFromCollection(['title', 'id']) %}
+                    <a href="{{ url(item.id) }}" class="text-lg flex items-center py-1 hover:text-pink-500">
+                        <div>{{ item.title }}</div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

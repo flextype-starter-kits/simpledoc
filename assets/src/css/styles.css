@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Maven Pro', monospace!important;
+    }
+
+    p {
+        @apply mb-5;
+    }
+
+    h4 {
+        @apply mb-5 mt-5 font-semibold;
+    }
+
+    pre {
+        @apply mb-10 p-5 border-2 border-black text-sm overflow-scroll;
+    }
+
+    pre > code {
+        @apply overflow-scroll;
+    }
+}
