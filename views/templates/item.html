@@ -1,8 +1,8 @@
 {% extends 'views/layouts/base.html' %}
 
 {% block content %}
-    <div class="flex">
-        <div class="w-3/12">
+    <div class="lg:flex">
+        <div class="w-full lg:w-3/12">
             {% for category in entries().fetch('doc', {'collection': true}).sortByAsc('title').onlyFromCollection(['title', 'id']) %}
                 <a href="{{ url(category.id) }}" class="text-xl font-semibold flex items-center pb-2 hover:text-pink-500">
                     <div>{{ category.title }}</div>
@@ -16,7 +16,7 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="w-9/12 lg:pl-10">
+        <div class="w-full lg:w-9/12 lg:pl-10">
             <h2 class="text-4xl mb-10 font-bold">
                 {{ title }}
             </h2>
