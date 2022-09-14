@@ -26,9 +26,9 @@ The following dependencies need to be downloaded and installed for Simpledoc Sta
 | Item | Version | Download |
 |---|---|---|
 | [flextype](https://github.com/flextype/flextype) | ^1.0.0-alpha.1 | [download](https://github.com/flextype/flextype/releases) |
-| [site](https://github.com/flextype-plugins/site) | ^2.0.0 | [download](https://github.com/flextype-plugins/site/releases) |
-| [sitemap](https://github.com/flextype-plugins/sitemap) | ^3.0.0 | [download](https://github.com/flextype-plugins/sitemap/releases) |
-| [twig](https://github.com/flextype-plugins/twig) | ^3.0.0 | [download](https://github.com/flextype-plugins/twig/releases) |
+| [site](https://github.com/flextype-plugins/site) | ^2.1.0 | [download](https://github.com/flextype-plugins/site/releases) |
+| [sitemap](https://github.com/flextype-plugins/sitemap) | ^3.1.0 | [download](https://github.com/flextype-plugins/sitemap/releases) |
+| [twig](https://github.com/flextype-plugins/twig) | ^3.2.0 | [download](https://github.com/flextype-plugins/twig/releases) |
 
 ## Installation
 
